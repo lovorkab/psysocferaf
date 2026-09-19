@@ -14,6 +14,112 @@
 <link rel="stylesheet" href="style.css">
 
 
+<style>
+
+    /* ZAGLAVLJE - CILJEVI */
+
+    header {
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+        padding: 18px 5%;
+    }
+
+    header nav {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    header .logo {
+        position: absolute;
+        left: 0;
+        color: var(--primary);
+        font-size: 1.45rem;
+        font-weight: 700;
+        letter-spacing: 0.4px;
+    }
+
+    header nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav a {
+        color: var(--text);
+        text-decoration: none;
+        font-size: 0.95rem;
+    }
+
+    header nav a:hover {
+        color: var(--primary);
+    }
+
+    .language-switcher {
+        position: absolute;
+        right: 5%;
+        top: 18px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        white-space: nowrap;
+    }
+
+    .language-switcher a {
+        color: var(--text);
+        text-decoration: none;
+        font-size: 0.95rem;
+    }
+
+    .language-switcher a:hover {
+        color: var(--primary);
+    }
+
+    .language-switcher a.current {
+        color: var(--primary);
+        font-weight: 700;
+    }
+
+
+    @media (max-width: 800px) {
+
+        header {
+            padding: 18px 25px;
+        }
+
+        header nav {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        header .logo {
+            position: static;
+        }
+
+        header nav ul {
+            justify-content: center;
+            gap: 14px;
+        }
+
+        .language-switcher {
+            position: static;
+            justify-content: center;
+            margin-top: 12px;
+        }
+
+    }
+
+</style>
+
+
 </head>
 
 <body>
@@ -26,6 +132,7 @@
     <div class="logo">
         PsySocFear-F
     </div>
+
 
     <ul>
 
@@ -56,9 +163,15 @@
 
 <div class="language-switcher">
 
-    <a href="ciljevi.html"><strong>HR</strong></a>
-    |
-    <a href="ciljevi-en.html"><strong>EN</strong></a>
+    <a href="ciljevi.html" class="current">
+        <strong>HR</strong>
+    </a>
+
+    <span>|</span>
+
+    <a href="ciljevi-en.html">
+        <strong>EN</strong>
+    </a>
 
 </div>
 
@@ -85,6 +198,7 @@
 </div>
 
 
+
 <h2>
     Opći cilj
 </h2>
@@ -94,6 +208,7 @@
     Istražiti psihosocijalne čimbenike povezane sa strahom od recidiva
     raka kod žena oboljelih od raka dojke i ginekoloških karcinoma.
 </p>
+
 
 
 <h2>
@@ -119,6 +234,7 @@
     </div>
 
 
+
     <div class="card">
 
         <h3>
@@ -134,6 +250,7 @@
     </div>
 
 
+
     <div class="card">
 
         <h3>
@@ -146,6 +263,7 @@
         </p>
 
     </div>
+
 
 
     <div class="card">
@@ -163,6 +281,7 @@
     </div>
 
 
+
     <div class="card">
 
         <h3>
@@ -176,6 +295,7 @@
         </p>
 
     </div>
+
 
 
     <div class="card">
@@ -204,6 +324,7 @@
 <p>
     PsySocFear-F | Istraživački projekt
 </p>
+
 
 <p>
     © 2026 PsySocFear-F
