@@ -8,7 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>O projektu | PsySocFear-F</title>
+.funding-logos {
+    margin: 25px 0;
+    text-align: center;
+}
 
+.funding-logos img {
+    display: block;
+    width: 220px;
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
     <style>
 
         * {
