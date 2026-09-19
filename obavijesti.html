@@ -14,6 +14,43 @@
 
 <style>
 
+    /* JEZIČNI IZBORNIK */
+
+    nav {
+        position: relative;
+    }
+
+    .language-switch {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-left: 10px;
+        white-space: nowrap;
+    }
+
+    .language-switch a {
+        color: #45424a;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.85rem;
+        font-weight: 700;
+    }
+
+    .language-switch a:hover {
+        color: #6b3f5d;
+    }
+
+    .language-switch .active {
+        color: #6b3f5d;
+    }
+
+    .language-divider {
+        color: #eadfe6;
+    }
+
+
+    /* OBAVIJESTI */
+
     .news-card details summary {
         cursor: pointer;
         list-style: none;
@@ -77,6 +114,22 @@
         background: #4d2c43;
     }
 
+
+    /* MOBITEL */
+
+    @media (max-width: 800px) {
+
+        nav {
+            flex-wrap: wrap;
+        }
+
+        .language-switch {
+            margin-left: 0;
+            margin-top: 5px;
+        }
+
+    }
+
 </style>
 
 
@@ -121,11 +174,20 @@
 
     <div class="language-switch">
 
-        <a href="obavijesti.html">HR</a>
+        <a href="obavijesti.html" class="active">
+            HR
+        </a>
 
-        <a href="obavijesti-en.html">EN</a>
+        <span class="language-divider">
+            |
+        </span>
+
+        <a href="obavijesti-en.html">
+            EN
+        </a>
 
     </div>
+
 
 </nav>
 
@@ -358,6 +420,7 @@
 <p>
     © 2026 PsySocFear-F
 </p>
+
 
 </footer>
 
