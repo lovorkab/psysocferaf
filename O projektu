@@ -1,4 +1,4 @@
-```html id="0i7b1x"
+```html
 <!DOCTYPE html>
 <html lang="hr">
 
@@ -8,18 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>O projektu | PsySocFear-F</title>
-.funding-logos {
-    margin: 25px 0;
-    text-align: center;
-}
 
-.funding-logos img {
-    display: block;
-    width: 220px;
-    max-width: 80%;
-    height: auto;
-    margin: 0 auto;
-}
     <style>
 
         * {
@@ -106,8 +95,6 @@
             padding: 35px;
             text-align: center;
         }
-
-        /* EU OZNAKA */
 
         .funding-logos {
             margin: 25px 0;
@@ -215,80 +202,4 @@
         Razumijevanje čimbenika koji doprinose razvoju i održavanju straha od
         recidiva važno je za razvoj odgovarajuće psihološke podrške osobama
         koje su završile liječenje.
-    </p>
-
-
-    <h2>
-        Fokus projekta
-    </h2>
-
-
-    <p>
-        Projekt je usmjeren na istraživanje psiholoških i socijalnih čimbenika
-        koji mogu biti povezani sa strahom od recidiva raka.
-    </p>
-
-
-    <p>
-        Posebna se pažnja posvećuje iskustvima žena oboljelih od raka dojke
-        i ginekoloških karcinoma te mogućnostima unapređenja psihološke
-        podrške tijekom razdoblja nakon liječenja.
-    </p>
-
-
-    <h2>
-        Primjena rezultata
-    </h2>
-
-
-    <p>
-        Očekuje se da će rezultati projekta pridonijeti boljem razumijevanju
-        potreba osoba koje žive nakon liječenja raka te pružiti osnovu za
-        razvoj edukativnih materijala, radionica i preporuka relevantnih za
-        stručnu praksu.
-    </p>
-
-</main>
-
-
-<footer>
-
-    <p>
-        <strong>
-            PsySocFear-F
-        </strong>
-    </p>
-
-
-    <p>
-        Psihosocijalni čimbenici kao prediktori straha od recidiva raka
-        kod žena oboljelih od raka dojke i ginekoloških karcinoma
-    </p>
-
-
-    <p>
-        Fakultet hrvatskih studija Sveučilišta u Zagrebu
-    </p>
-
-
-    <div class="funding-logos">
-
-        <img
-            src="eu-logo.png"
-            alt="Financira Europska unija - NextGenerationEU"
-        >
-
-    </div>
-
-
-    <p>
-        © 2026 PsySocFear-F
-    </p>
-
-</footer>
-
-
-</body>
-
-</html>
 ```
