@@ -1,20 +1,150 @@
+```html
 <!DOCTYPE html>
 <html lang="hr">
 
 <head>
 
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>O projektu | PsySocFear-F</title>
 
-    <link rel="stylesheet" href="style.css">
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #263238;
+            background-color: #f7f9f8;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(135deg, #164a45, #28766c);
+            color: white;
+            padding: 25px 8%;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .logo {
+            font-size: 1.7rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 70px auto;
+            padding: 0 30px;
+        }
+
+        h1 {
+            color: #164a45;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #28766c;
+            margin-top: 40px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 18px;
+        }
+
+        .highlight {
+            background-color: #eaf3f1;
+            padding: 30px;
+            border-left: 5px solid #28766c;
+            margin: 30px 0;
+        }
+
+        /* EU OZNAKA */
+
+        .funding {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .funding img {
+            display: block;
+            width: 220px;
+            max-width: 80%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        footer {
+            background-color: #102f2c;
+            color: #dce8e6;
+            padding: 35px;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 800px) {
+
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul {
+                gap: 15px;
+            }
+
+            main {
+                margin: 45px auto;
+                padding: 0 22px;
+            }
+
+            h1 {
+                font-size: 2.1rem;
+            }
+
+        }
+
+    </style>
 
 </head>
 
 
 <body>
+
 
 <header>
 
@@ -55,7 +185,9 @@
 
 <main>
 
-    <h1>O projektu</h1>
+    <h1>
+        O projektu
+    </h1>
 
 
     <div class="highlight">
@@ -65,67 +197,4 @@
             psihosocijalnih čimbenika povezanih sa strahom od recidiva raka
             kod žena oboljelih od raka dojke i ginekoloških karcinoma.
         </p>
-
-    </div>
-
-
-    <h2>Zašto je ova tema važna?</h2>
-
-    <p>
-        Završetak aktivnog onkološkog liječenja za mnoge osobe ne znači i
-        završetak suočavanja s posljedicama bolesti. Strah od povratka bolesti
-        može ostati prisutan tijekom daljnjeg života i utjecati na emocionalno
-        funkcioniranje, svakodnevni život i kvalitetu života.
-    </p>
-
-
-    <p>
-        Razumijevanje čimbenika koji doprinose razvoju i održavanju straha od
-        recidiva važno je za razvoj odgovarajuće psihološke podrške osobama
-        koje su završile liječenje.
-    </p>
-
-
-    <h2>Fokus projekta</h2>
-
-    <p>
-        Projekt je usmjeren na istraživanje psiholoških i socijalnih čimbenika
-        koji mogu biti povezani sa strahom od recidiva raka.
-    </p>
-
-
-    <p>
-        Posebna se pažnja posvećuje iskustvima žena oboljelih od raka dojke
-        i ginekoloških karcinoma te mogućnostima unapređenja psihološke
-        podrške tijekom razdoblja nakon liječenja.
-    </p>
-
-
-    <h2>Primjena rezultata</h2>
-
-    <p>
-        Rezultati projekta mogu pridonijeti boljem razumijevanju potreba
-        osoba koje žive nakon liječenja raka te pružiti osnovu za razvoj
-        edukativnih materijala, radionica i preporuka relevantnih za
-        stručnu praksu.
-    </p>
-
-</main>
-
-
-<footer>
-
-    <p>
-        PsySocFear-F | Istraživački projekt
-    </p>
-
-    <p>
-        © 2026 PsySocFear-F
-    </p>
-
-</footer>
-
-
-</body>
-
-</html>
+```
