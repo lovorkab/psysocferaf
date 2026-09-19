@@ -13,7 +13,9 @@
 
     <style>
 
-        /* DRUGA OBAVIJEST */
+        /* =====================================================
+           DRUGA OBAVIJEST
+           ===================================================== */
 
         .news-card details summary {
             cursor: pointer !important;
@@ -27,66 +29,101 @@
             display: none !important;
         }
 
+
+        /* NASLOV DRUGE OBAVIJESTI */
+
         .news-title {
             display: block !important;
             width: 100% !important;
+
             font-size: 1.7rem !important;
             font-weight: 700 !important;
             line-height: 1.35 !important;
+
             color: #7b3f68 !important;
+
             margin: 0 0 22px 0 !important;
             padding: 0 !important;
+
             text-align: left !important;
         }
 
-        /* GUMB SAZNAJTE VIŠE - ISTI OBLIK KAO PRVI GUMB */
+
+        /* =====================================================
+           GUMB – SAZNAJTE VIŠE
+
+           Namjerno je napravljen kao pravokutni gumb
+           s blagim zaobljenjem, kao prvi gumb.
+           ===================================================== */
 
         .more-button {
             display: inline-block !important;
-            padding: 11px 25px !important;
+
+            padding: 10px 20px !important;
             margin: 0 !important;
 
-            border: 2px solid #7b3f68 !important;
-            border-radius: 6px !important;
-
+            background: #7b3f68 !important;
             background-color: #7b3f68 !important;
+
             color: #ffffff !important;
+
+            border: 2px solid #7b3f68 !important;
+            border-radius: 5px !important;
 
             font-size: 0.95rem !important;
             font-weight: 700 !important;
             line-height: 1.2 !important;
+
             letter-spacing: 0.5px !important;
 
             text-align: center !important;
+
             box-sizing: border-box !important;
 
-            transition: all 0.2s ease !important;
+            transition: background-color 0.2s ease,
+                        border-color 0.2s ease !important;
         }
 
+
         .news-card details summary:hover .more-button {
+            background: #633252 !important;
             background-color: #633252 !important;
             border-color: #633252 !important;
             color: #ffffff !important;
         }
 
+
+        /* TEKST KOJI SE OTVARA */
+
         .news-text {
             display: block !important;
+
             margin-top: 25px !important;
             padding-top: 20px !important;
+
             border-top: 1px solid rgba(123, 63, 104, 0.2) !important;
+
             text-align: left !important;
         }
+
 
         .news-text p {
             text-align: left !important;
         }
 
+
+        /* SAKRIJ TEKST */
+
         .close-text {
             display: block !important;
+
             margin-top: 25px !important;
+
             color: #7b3f68 !important;
+
             font-size: 0.9rem !important;
             font-weight: 700 !important;
+
             text-align: left !important;
         }
 
@@ -138,174 +175,4 @@
 
 
 <main>
-
-
-    <h1>
-        Obavijesti
-    </h1>
-
-
-    <p>
-        Ovdje možete pratiti novosti, aktivnosti i događanja
-        povezana s projektom PsySocFear-F.
-    </p>
-
-
-
-    <!-- PRVA OBAVIJEST -->
-
-    <article class="card">
-
-        <h2>
-            Projekt PsySocFear-F predstavljen člankom o suočavanju
-            sa strahom od povratka bolesti
-        </h2>
-
-
-        <p>
-            U novom broju časopisa <em>Ljepota i zdravlje</em>
-            objavljen je članak povezan s temom straha od povratka
-            bolesti te je predstavljen projekt PsySocFear-F.
-        </p>
-
-
-        <p>
-
-            <a
-                href="https://www.ljepotaizdravlje.hr/strah-od-recidiva-raka-nakon-lijecenja/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="button"
-            >
-                Pročitajte cijeli članak
-            </a>
-
-        </p>
-
-    </article>
-
-
-
-    <!-- DRUGA OBAVIJEST -->
-
-    <article class="card news-card">
-
-        <details>
-
-            <summary>
-
-                <span class="news-title">
-                    Održana fokus grupa u sklopu PsySocFear-F projekta
-                </span>
-
-
-                <span class="more-button">
-                    SAZNAJTE VIŠE ↓
-                </span>
-
-            </summary>
-
-
-
-            <div class="news-text">
-
-
-                <p>
-
-                    Ovaj tjedan, 21.07.2026., doc. dr. sc. Ana Petak i
-                    Dora Korać, mag. psych. održale su prvo u nizu planiranih
-                    kvalitativnih istraživanja u sklopu projekta
-                    <em>
-                        Psihosocijalni čimbenici kao prediktori straha od
-                        recidiva raka kod žena oboljelih od raka dojke i
-                        ginekoloških karcinoma (PsySocFear-F).
-                    </em>
-
-                    Radi se o interdisciplinarnom projektu Fakulteta
-                    hrvatskih studija, financiranog od strane Europske unije
-                    (<em>NextGenerationEU</em>), s istraživačkim timom koji
-                    obuhvaća istraživače i stručnjake iz različitih područja.
-
-                </p>
-
-
-
-                <p>
-
-                    Cilj projekta je istražiti psihološke i socijalne čimbenike
-                    povezane sa strahom od povratka karcinoma te doprinijeti
-                    razvoju kvalitetne psihološke podrške za žene i njihove
-                    bližnje, edukativnih materijala, preporuka za praksu i
-                    edukacija za stručnjake.
-
-                </p>
-
-
-
-                <p>
-
-                    Istraživanje je provedeno u Osijeku gdje su sudionice
-                    otvoreno podijelile svoja iskustva od trenutka postavljanja
-                    dijagnoze, kroz razdoblje aktivnog liječenja, pa sve do
-                    izazova svakodnevnog života nakon završetka terapije.
-
-                    Prikupili smo vrijedne spoznaje o njihovim potrebama
-                    tijekom i nakon liječenja, što će biti važna podloga za
-                    oblikovanje nadolazećih projektnih aktivnosti koje će
-                    odgovarati stvarnim potrebama korisnica.
-
-                </p>
-
-
-
-                <div class="close-text">
-                    SAKRIJ TEKST ↑
-                </div>
-
-
-            </div>
-
-        </details>
-
-    </article>
-
-
-
-</main>
-
-
-
-<footer>
-
-
-    <p>
-        <strong>
-            PsySocFear-F
-        </strong>
-    </p>
-
-
-    <p>
-        Psihosocijalni čimbenici kao prediktori straha od recidiva raka
-        kod žena oboljelih od raka dojke i ginekoloških karcinoma
-    </p>
-
-
-    <p>
-        Fakultet hrvatskih studija Sveučilišta u Zagrebu
-    </p>
-
-
-    <p>
-        © 2026 PsySocFear-F
-    </p>
-
-
-</footer>
-
-
-</body>
-
-</html>
 ```
-
