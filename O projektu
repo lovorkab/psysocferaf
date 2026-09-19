@@ -1,12 +1,16 @@
+```html
 <!DOCTYPE html>
 <html lang="hr">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>O projektu | PsySocFear-F</title>
 
     <style>
+
         * {
             box-sizing: border-box;
             margin: 0;
@@ -92,7 +96,21 @@
             text-align: center;
         }
 
+        /* EU OZNAKA */
+
+        .footer-funding {
+            margin: 22px 0;
+            text-align: center;
+        }
+
+        .footer-funding img {
+            width: 220px;
+            max-width: 80%;
+            height: auto;
+        }
+
         @media (max-width: 800px) {
+
             nav {
                 flex-direction: column;
                 align-items: flex-start;
@@ -101,11 +119,16 @@
             nav ul {
                 gap: 15px;
             }
+
         }
+
     </style>
+
 </head>
 
+
 <body>
+
 
 <header>
 
@@ -116,11 +139,27 @@
         </div>
 
         <ul>
-            <li><a href="index.html">Početna</a></li>
-            <li><a href="o-projektu.html">O projektu</a></li>
-            <li><a href="tim.html">Naš tim</a></li>
-            <li><a href="ciljevi.html">Ciljevi</a></li>
-            <li><a href="obavijesti.html">Obavijesti</a></li>
+
+            <li>
+                <a href="index.html">Početna</a>
+            </li>
+
+            <li>
+                <a href="o-projektu.html">O projektu</a>
+            </li>
+
+            <li>
+                <a href="tim.html">Naš tim</a>
+            </li>
+
+            <li>
+                <a href="ciljevi.html">Ciljevi</a>
+            </li>
+
+            <li>
+                <a href="obavijesti.html">Obavijesti</a>
+            </li>
+
         </ul>
 
     </nav>
@@ -130,7 +169,10 @@
 
 <main>
 
-    <h1>O projektu</h1>
+    <h1>
+        O projektu
+    </h1>
+
 
     <div class="highlight">
 
@@ -143,7 +185,10 @@
     </div>
 
 
-    <h2>Zašto je ova tema važna?</h2>
+    <h2>
+        Zašto je ova tema važna?
+    </h2>
+
 
     <p>
         Završetak aktivnog onkološkog liječenja za mnoge osobe ne znači i
@@ -152,6 +197,7 @@
         funkcioniranje, svakodnevni život i kvalitetu života.
     </p>
 
+
     <p>
         Razumijevanje čimbenika koji doprinose razvoju i održavanju straha od
         recidiva važno je za razvoj odgovarajuće psihološke podrške osobama
@@ -159,12 +205,16 @@
     </p>
 
 
-    <h2>Fokus projekta</h2>
+    <h2>
+        Fokus projekta
+    </h2>
+
 
     <p>
         Projekt je usmjeren na istraživanje psiholoških i socijalnih čimbenika
         koji mogu biti povezani sa strahom od recidiva raka.
     </p>
+
 
     <p>
         Posebna se pažnja posvećuje iskustvima žena oboljelih od raka dojke
@@ -173,7 +223,10 @@
     </p>
 
 
-    <h2>Primjena rezultata</h2>
+    <h2>
+        Primjena rezultata
+    </h2>
+
 
     <p>
         Očekuje se da će rezultati projekta pridonijeti boljem razumijevanju
@@ -191,11 +244,30 @@
         PsySocFear-F | Istraživački projekt
     </p>
 
+
+    <p>
+        Fakultet hrvatskih studija Sveučilišta u Zagrebu
+    </p>
+
+
+    <div class="footer-funding">
+
+        <img
+            src="eu-logo.png"
+            alt="Financira Europska unija - NextGenerationEU"
+        >
+
+    </div>
+
+
     <p>
         © 2026 PsySocFear-F
     </p>
 
 </footer>
 
+
 </body>
+
 </html>
+```
