@@ -332,3 +332,40 @@ footer p {
         font-size: 2.1rem;
     }
 }
+/* JEZIK */
+
+.language-switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+.language-switch a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.language-switch a:hover {
+    color: var(--primary);
+}
+
+.language-switch .active {
+    color: var(--primary);
+}
+
+.language-divider {
+    color: var(--border);
+}
+
+@media (max-width: 800px) {
+
+    .language-switch {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+}
