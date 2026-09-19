@@ -89,6 +89,22 @@
             margin: 30px 0;
         }
 
+        /* EU OZNAKA */
+
+        .funding {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .funding img {
+            display: block;
+            width: 220px;
+            max-width: 80%;
+            height: auto;
+            margin: 0 auto;
+        }
+
         footer {
             background-color: #102f2c;
             color: #dce8e6;
@@ -96,17 +112,8 @@
             text-align: center;
         }
 
-        .funding-logos {
-            margin: 25px 0;
-            text-align: center;
-        }
-
-        .funding-logos img {
-            display: block;
-            width: 220px;
-            max-width: 80%;
-            height: auto;
-            margin: 0 auto;
+        footer p {
+            margin-bottom: 10px;
         }
 
         @media (max-width: 800px) {
@@ -118,6 +125,15 @@
 
             nav ul {
                 gap: 15px;
+            }
+
+            main {
+                margin: 45px auto;
+                padding: 0 22px;
+            }
+
+            h1 {
+                font-size: 2.1rem;
             }
 
         }
@@ -181,25 +197,4 @@
             psihosocijalnih čimbenika povezanih sa strahom od recidiva raka
             kod žena oboljelih od raka dojke i ginekoloških karcinoma.
         </p>
-
-    </div>
-
-
-    <h2>
-        Zašto je ova tema važna?
-    </h2>
-
-
-    <p>
-        Završetak aktivnog onkološkog liječenja za mnoge osobe ne znači i
-        završetak suočavanja s posljedicama bolesti. Strah od povratka bolesti
-        može ostati prisutan tijekom daljnjeg života i utjecati na emocionalno
-        funkcioniranje, svakodnevni život i kvalitetu života.
-    </p>
-
-
-    <p>
-        Razumijevanje čimbenika koji doprinose razvoju i održavanju straha od
-        recidiva važno je za razvoj odgovarajuće psihološke podrške osobama
-        koje su završile liječenje.
 ```
