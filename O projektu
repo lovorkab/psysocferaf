@@ -1,4 +1,4 @@
-```html
+```html id="0i7b1x"
 <!DOCTYPE html>
 <html lang="hr">
 
@@ -98,15 +98,17 @@
 
         /* EU OZNAKA */
 
-        .footer-funding {
-            margin: 22px 0;
+        .funding-logos {
+            margin: 25px 0;
             text-align: center;
         }
 
-        .footer-funding img {
+        .funding-logos img {
+            display: block;
             width: 220px;
             max-width: 80%;
             height: auto;
+            margin: 0 auto;
         }
 
         @media (max-width: 800px) {
@@ -241,7 +243,15 @@
 <footer>
 
     <p>
-        PsySocFear-F | Istraživački projekt
+        <strong>
+            PsySocFear-F
+        </strong>
+    </p>
+
+
+    <p>
+        Psihosocijalni čimbenici kao prediktori straha od recidiva raka
+        kod žena oboljelih od raka dojke i ginekoloških karcinoma
     </p>
 
 
@@ -250,7 +260,7 @@
     </p>
 
 
-    <div class="footer-funding">
+    <div class="funding-logos">
 
         <img
             src="eu-logo.png"
