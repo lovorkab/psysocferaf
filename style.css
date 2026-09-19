@@ -1,180 +1,20 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+.project-logo {
+    display: block;
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 35px auto;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #263238;
-    background-color: #f7f9f8;
-    line-height: 1.7;
-}
-
-/* NAVIGACIJA */
-
-header {
-    background: linear-gradient(135deg, #164a45, #28766c);
-    color: white;
-    padding: 22px 7%;
-}
-
-nav {
-    max-width: 1200px;
-    margin: auto;
+.funding-logos {
+    margin-top: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 30px;
 }
 
-.logo {
-    font-size: 1.7rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    flex-wrap: wrap;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 0.95rem;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* GLAVNI SADRŽAJ */
-
-main {
-    max-width: 1050px;
-    margin: 70px auto;
-    padding: 0 30px;
-}
-
-h1 {
-    color: #164a45;
-    font-size: 2.6rem;
-    line-height: 1.2;
-    margin-bottom: 30px;
-}
-
-h2 {
-    color: #28766c;
-    margin-top: 40px;
-    margin-bottom: 15px;
-}
-
-p {
-    margin-bottom: 18px;
-}
-
-/* NASLOVNA */
-
-.hero {
-    background: white;
-    padding: 90px 8%;
-}
-
-.hero-content {
-    max-width: 1100px;
-    margin: auto;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    max-width: 900px;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    max-width: 850px;
-    color: #455a64;
-}
-
-.button {
-    display: inline-block;
-    margin-top: 25px;
-    background-color: #28766c;
-    color: white;
-    padding: 13px 25px;
-    border-radius: 6px;
-    text-decoration: none;
-}
-
-.button:hover {
-    background-color: #164a45;
-}
-
-/* ISTAKNUTI SADRŽAJ */
-
-.highlight {
-    background-color: #eaf3f1;
-    padding: 30px;
-    border-left: 5px solid #28766c;
-    margin: 30px 0;
-}
-
-/* KARTICE */
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    margin-top: 35px;
-}
-
-.card {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.07);
-}
-
-.card h3 {
-    color: #28766c;
-    margin-bottom: 12px;
-}
-
-/* PODNOŽJE */
-
-footer {
-    background-color: #102f2c;
-    color: #dce8e6;
-    padding: 35px 8%;
-    text-align: center;
-    font-size: 0.9rem;
-}
-
-footer p {
-    margin-bottom: 5px;
-}
-
-/* MOBITEL */
-
-@media (max-width: 800px) {
-
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul {
-        gap: 15px;
-    }
-
-    .hero h1 {
-        font-size: 2.1rem;
-    }
-
-    .cards {
-        grid-template-columns: 1fr;
-    }
+.funding-logos img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
 }
