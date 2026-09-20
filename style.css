@@ -38,11 +38,18 @@ nav {
 max-width: 1200px;
 margin: 0 auto;
 min-height: 38px;
+
+
 display: flex;
 align-items: center;
 justify-content: center;
+
 position: relative;
+
+
 }
+
+/* LOGO */
 
 .logo {
 position: absolute;
@@ -59,23 +66,45 @@ letter-spacing: 0.4px;
 
 }
 
+/* GLAVNI IZBORNIK */
+
 nav ul {
 list-style: none;
+
+
 display: flex;
 align-items: center;
 justify-content: center;
+
 gap: 24px;
 flex-wrap: wrap;
+
+margin: 0;
+padding: 0;
+
+
 }
 
-nav a {
+nav ul li {
+margin: 0;
+padding: 0;
+}
+
+nav ul li a {
 color: var(--text);
 text-decoration: none;
+
+
+font-family: Arial, Helvetica, sans-serif;
 font-size: 0.95rem;
+font-weight: 400;
+
 transition: color 0.2s ease;
+
+
 }
 
-nav a:hover {
+nav ul li a:hover {
 color: var(--primary);
 }
 
@@ -85,14 +114,20 @@ HR / EN
 
 .language-switch {
 position: absolute;
+
+
 right: 0;
 top: 50%;
-transform: translateY(-50%);
 
+transform: translateY(-50%);
 
 display: flex;
 align-items: center;
+
 gap: 8px;
+
+margin: 0;
+padding: 0;
 
 white-space: nowrap;
 
@@ -101,14 +136,17 @@ white-space: nowrap;
 
 .language-switch a {
 color: var(--text);
-text-decoration: none;
 
+
+text-decoration: none;
 
 font-family: Arial, Helvetica, sans-serif;
 font-size: 0.85rem;
 font-weight: 700;
 
 line-height: 1;
+
+transition: color 0.2s ease;
 
 
 }
@@ -123,6 +161,12 @@ color: var(--primary);
 
 .language-divider {
 color: var(--border);
+
+
+font-family: Arial, Helvetica, sans-serif;
+font-size: 0.85rem;
+
+
 }
 
 /* =========================
@@ -137,16 +181,26 @@ padding: 70px 30px;
 
 h1 {
 color: var(--primary-dark);
+
+
 font-size: 2.7rem;
 line-height: 1.2;
+
 margin-bottom: 30px;
+
+
 }
 
 h2 {
 color: var(--primary);
+
+
 font-size: 1.7rem;
+
 margin-top: 45px;
 margin-bottom: 18px;
+
+
 }
 
 h3 {
@@ -173,6 +227,7 @@ var(--lighter) 55%,
 
 
 padding: 85px 30px;
+
 text-align: center;
 
 
@@ -185,24 +240,42 @@ margin: auto;
 
 .project-logo {
 display: block;
+
+
 width: 280px;
 max-width: 75%;
+
 height: auto;
+
 margin: 0 auto 35px auto;
+
+
 }
 
 .hero h1 {
 max-width: 950px;
+
+
 margin: 0 auto 25px auto;
+
 color: var(--primary-dark);
+
 font-size: 2.65rem;
+
+
 }
 
 .hero p {
 max-width: 850px;
+
+
 margin: 0 auto;
+
 font-size: 1.12rem;
+
 color: var(--muted);
+
+
 }
 
 /* =========================
@@ -211,14 +284,17 @@ GUMBI
 
 .button {
 display: inline-block;
-margin-top: 25px;
-padding: 12px 26px;
 
+
+margin-top: 25px;
+
+padding: 12px 26px;
 
 background: var(--primary);
 color: white;
 
 text-decoration: none;
+
 border-radius: 6px;
 
 transition: all 0.2s ease;
@@ -228,7 +304,11 @@ transition: all 0.2s ease;
 
 .button:hover {
 background: var(--primary-dark);
+
+
 transform: translateY(-1px);
+
+
 }
 
 /* =========================
@@ -237,32 +317,51 @@ SEKCIJE
 
 .intro {
 background: white;
+
+
 padding: 65px 30px;
+
+
 }
 
 .section-content {
 max-width: 1100px;
+
+
 margin: auto;
+
+
 }
 
 .section-title {
 color: var(--primary-dark);
+
+
 text-align: center;
+
 margin-bottom: 25px;
+
+
 }
 
 .intro p {
 max-width: 850px;
+
+
 margin-left: auto;
 margin-right: auto;
+
+
 }
 
 .highlight {
 background: var(--light);
+
+
 border-left: 5px solid var(--secondary);
 
-
 padding: 25px 30px;
+
 margin: 30px 0;
 
 border-radius: 0 6px 6px 0;
@@ -276,9 +375,15 @@ KARTICE
 
 .cards {
 display: grid;
+
+
 grid-template-columns: repeat(3, 1fr);
+
 gap: 25px;
+
 margin-top: 35px;
+
+
 }
 
 .card {
@@ -288,16 +393,22 @@ background: var(--white);
 padding: 30px;
 
 border: 1px solid var(--border);
+
 border-radius: 9px;
 
-box-shadow: 0 5px 18px rgba(75, 50, 65, 0.07);
+box-shadow:
+    0 5px 18px rgba(75, 50, 65, 0.07);
 
 
 }
 
 .card h3 {
 color: var(--primary);
+
+
 margin-bottom: 15px;
+
+
 }
 
 /* =========================
@@ -306,16 +417,23 @@ INFORMACIJE O PROJEKTU
 
 .project-info {
 background: var(--light);
+
+
 padding: 55px 30px;
+
+
 }
 
 .project-info-grid {
 max-width: 950px;
+
+
 margin: 30px auto 0 auto;
 
-
 display: grid;
+
 grid-template-columns: repeat(2, 1fr);
+
 gap: 20px;
 
 
@@ -336,8 +454,13 @@ border-radius: 8px;
 
 .info-box strong {
 display: block;
+
+
 color: var(--primary);
+
 margin-bottom: 7px;
+
+
 }
 
 /* =========================
@@ -346,8 +469,9 @@ FINANCIRANJE
 
 .funding {
 background: var(--primary-dark);
-color: white;
 
+
+color: white;
 
 padding: 60px 30px;
 
@@ -358,7 +482,11 @@ text-align: center;
 
 .funding h2 {
 color: white;
+
+
 margin-top: 0;
+
+
 }
 
 .funding p {
@@ -367,9 +495,10 @@ color: #f7edf3;
 
 .funding-logos {
 display: flex;
+
+
 justify-content: center;
 align-items: center;
-
 
 margin-top: 25px;
 
@@ -378,8 +507,13 @@ margin-top: 25px;
 
 .funding-logos img {
 width: 310px;
+
+
 max-width: 90%;
+
 height: auto;
+
+
 }
 
 /* =========================
@@ -388,8 +522,9 @@ PODNOŽJE
 
 footer {
 background: #33252f;
-color: white;
 
+
+color: white;
 
 text-align: center;
 
@@ -415,25 +550,34 @@ header {
 
 nav {
     flex-direction: column;
+
     min-height: auto;
+
     gap: 12px;
+
+    position: relative;
 }
 
 .logo {
     position: static;
+
     transform: none;
 }
 
 nav ul {
     justify-content: center;
+
     gap: 14px;
 }
 
 .language-switch {
     position: static;
+
     transform: none;
-    margin-left: 0;
-    margin-top: 2px;
+
+    margin: 0;
+
+    justify-content: center;
 }
 
 main {
