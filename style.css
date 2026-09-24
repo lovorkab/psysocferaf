@@ -543,8 +543,9 @@ h1 {
 /* LOGO FAKULTETA NA MOBITELU */
 
 .institution-logo img {
-    width: 220px;
-    max-width: 80%;
+    width: 160px;
+    max-width: 60%;
+    height: auto;
 }
 
 }
