@@ -1,10 +1,8 @@
-
 <!DOCTYPE html>
 
 <html lang="hr">
 
 <head>
-
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,131 +13,150 @@
 
 <style>
 
-    /* JEZIČNI IZBORNIK */
+nav {
+    position: relative;
+}
+
+.language-switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+.language-switch a {
+    color: #45424a;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.language-switch a:hover {
+    color: #6b3f5d;
+}
+
+.language-switch .active {
+    color: #6b3f5d;
+}
+
+.language-divider {
+    color: #eadfe6;
+}
+
+
+/* OBAVIJESTI */
+
+.news-card details summary {
+    cursor: pointer;
+    list-style: none;
+    display: block;
+    text-align: left;
+}
+
+.news-card details summary::-webkit-details-marker {
+    display: none;
+}
+
+.news-title {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1.35;
+    color: #6b3f5d;
+    margin-bottom: 22px;
+}
+
+.more-button {
+    display: inline-block;
+    padding: 12px 26px;
+    border: 0;
+    border-radius: 6px;
+    background: #6b3f5d;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.more-button:hover {
+    background: #4d2c43;
+}
+
+.news-text {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #eadfe6;
+}
+
+.close-text {
+    margin-top: 25px;
+    text-align: left;
+    color: #6b3f5d;
+    font-weight: 700;
+}
+
+
+/* SLIKA OBAVIJESTI */
+
+.news-image {
+    display: block;
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    margin: 0 auto 30px auto;
+    border-radius: 6px;
+}
+
+
+/* GUMB */
+
+.article-button {
+    display: inline-block;
+    padding: 12px 26px;
+    background: #6b3f5d;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+.article-button:hover {
+    background: #4d2c43;
+}
+
+
+/* MOBITEL */
+
+@media (max-width: 800px) {
 
     nav {
-        position: relative;
+        flex-wrap: wrap;
     }
 
     .language-switch {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        margin-left: 10px;
-        white-space: nowrap;
+        margin-left: 0;
+        margin-top: 5px;
     }
 
-    .language-switch a {
-        color: #45424a;
-        text-decoration: none;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 0.85rem;
-        font-weight: 700;
+    .news-image {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 25px;
     }
 
-    .language-switch a:hover {
-        color: #6b3f5d;
-    }
-
-    .language-switch .active {
-        color: #6b3f5d;
-    }
-
-    .language-divider {
-        color: #eadfe6;
-    }
-
-
-    /* OBAVIJESTI */
-
-    .news-card details summary {
-        cursor: pointer;
-        list-style: none;
-        display: block;
-        text-align: left;
-    }
-
-    .news-card details summary::-webkit-details-marker {
-        display: none;
-    }
-
-    .news-title {
-        display: block;
-        font-size: 1.7rem;
-        font-weight: 700;
-        line-height: 1.35;
-        color: #6b3f5d;
-        margin-bottom: 22px;
-    }
-
-    .more-button {
-        display: inline-block;
-        padding: 12px 26px;
-        border: 0;
-        border-radius: 6px;
-        background: #6b3f5d;
-        color: white;
-        font-size: 0.95rem;
-        font-weight: 700;
-        letter-spacing: 0.3px;
-    }
-
-    .more-button:hover {
-        background: #4d2c43;
-    }
-
-    .news-text {
-        margin-top: 25px;
-        padding-top: 20px;
-        border-top: 1px solid #eadfe6;
-    }
-
-    .close-text {
-        margin-top: 25px;
-        text-align: left;
-        color: #6b3f5d;
-        font-weight: 700;
-    }
-
-    .article-button {
-        display: inline-block;
-        padding: 12px 26px;
-        background: #6b3f5d;
-        color: white;
-        text-decoration: none;
-        border-radius: 6px;
-        font-weight: 700;
-    }
-
-    .article-button:hover {
-        background: #4d2c43;
-    }
-
-
-    /* MOBITEL */
-
-    @media (max-width: 800px) {
-
-        nav {
-            flex-wrap: wrap;
-        }
-
-        .language-switch {
-            margin-left: 0;
-            margin-top: 5px;
-        }
-
-    }
+}
 
 </style>
 
-
 </head>
+
 
 <body>
 
-<header>
 
+<header>
 
 <nav>
 
@@ -189,12 +206,9 @@
 
     </div>
 
-
 </nav>
 
-
 </header>
-
 
 
 <main>
@@ -212,9 +226,192 @@
 
 
 
+<!-- NOVA OBAVIJEST – VUKOVAR -->
+
+<article class="card news-card">
+
+
+    <img
+        src="terensko-istrazivanje-vukovar-psysocfear-f.jpg"
+        alt="Terensko istraživanje u Vukovaru u sklopu projekta PsySocFear-F"
+        class="news-image"
+    >
+
+
+    <details>
+
+
+        <summary>
+
+
+            <span class="news-title">
+                Terensko istraživanje u Vukovaru u sklopu projekta PsySocFear-F
+            </span>
+
+
+            <span class="more-button">
+                SAZNAJTE VIŠE ↓
+            </span>
+
+
+        </summary>
+
+
+        <div class="news-text">
+
+
+            <p>
+                <strong>24. 9. 2026.</strong>
+            </p>
+
+
+            <p>
+
+                S početkom jeseni nastavljamo s provedbom terenskih
+                aktivnosti u sklopu projekta
+                „Psihosocijalni čimbenici kao prediktori straha od
+                recidiva raka kod žena oboljelih od raka dojke i
+                ginekoloških karcinoma“ (PsySocFear-F), pod vodstvom
+                izv. prof. dr. sc. Lovorke Brajković.
+
+            </p>
+
+
+            <p>
+
+                Projekt je usmjeren na bolje razumijevanje čimbenika
+                koji pridonose strahu od povratka bolesti, a cilj je,
+                među ostalim, pridonijeti razvoju kvalitetnije
+                psihološke podrške te izradi edukativnih materijala
+                i preporuka za praksu.
+
+            </p>
+
+
+            <p>
+
+                Istraživanje se provodi primjenom kvalitativnog i
+                kvantitativnog pristupa, a ovoga puta nas je terensko
+                istraživanje odvelo u Vukovar.
+
+            </p>
+
+
+            <p>
+
+                Odlazak u Vukovar organizirala je naša cijenjena
+                vanjska suradnica, prof. dr. sc. Marijana Braš,
+                koja već niz godina surađuje s onkološkim pacijentima
+                s ovog područja.
+
+            </p>
+
+
+            <p>
+
+                Doc. dr. sc. Ana Petak i dr. sc. Dora Korać provele su
+                nekoliko sadržajnih dana na terenu, uz iznimno srdačan
+                prijem i vrijednu podršku dr. Jadranke Ban te gospođe
+                Svjetlane Dželalija Kovačić, predsjednice Udruge
+                braniteljica Domovinskog rata Republike Hrvatske.
+
+            </p>
+
+
+            <p>
+
+                Uz njihovu pomoć u organizaciji prostora i okupljanju
+                sudionica provedene su dvije fokus grupe. Susreti su
+                protekli u otvorenoj i poticajnoj atmosferi, a sudionice
+                su pokazale veliku spremnost na razgovor i dijeljenje
+                vlastitih iskustava.
+
+            </p>
+
+
+            <p>
+
+                Posebno nam je značilo čuti da im je sam susret pružio
+                prostor za razmjenu savjeta te osjećaj da su njihova
+                mišljenja i perspektive prepoznati i uvaženi.
+
+            </p>
+
+
+            <p>
+
+                Vjerujemo da će prikupljeni podaci biti vrijedan doprinos
+                daljnjem istraživačkom radu, ali i podloga za osmišljavanje
+                mogućih intervencija i aktivnosti koje bi se u budućnosti
+                mogle primijeniti u praksi.
+
+            </p>
+
+
+            <p>
+
+                Boravak u Vukovaru iskoristili smo i za predstavljanje
+                projekta, podjelu promotivnih materijala te dodatno
+                širenje poziva za sudjelovanje u istraživanju.
+
+            </p>
+
+
+            <p>
+
+                Posebno nas veseli što je Udruga iskazala spremnost
+                ugostiti nas i tijekom radionica koje planiramo provesti
+                u novoj projektnoj godini.
+
+            </p>
+
+
+            <p>
+
+                Dr. Jadranka Ban i gospođa Svjetlana Dželalija Kovačić
+                pritom su nas povezale i s brojnim novim kontaktima,
+                otvorivši tako mogućnosti za daljnju suradnju i provedbu
+                projektnih aktivnosti na terenu.
+
+            </p>
+
+
+            <p>
+
+                Zahvaljujemo im na gostoprimstvu, podršci i povjerenju,
+                kao i svim sudionicama koje su svojim sudjelovanjem i
+                otvorenošću pridonijele provedbi istraživanja.
+
+            </p>
+
+
+            <p>
+
+                Veselimo se novim susretima i uskoro se nadamo podijeliti
+                s vama i nove izvještaje s terena!
+
+            </p>
+
+
+            <div class="close-text">
+                SAKRIJ TEKST ↑
+            </div>
+
+
+        </div>
+
+
+    </details>
+
+
+</article>
+
+
+
 <!-- PRVA OBAVIJEST -->
 
 <article class="card">
+
 
     <h2>
         Projekt PsySocFear-F predstavljen člankom o suočavanju
@@ -223,9 +420,11 @@
 
 
     <p>
+
         U novom broju časopisa <em>Ljepota i zdravlje</em>
         objavljen je članak povezan s temom straha od povratka
         bolesti te je predstavljen projekt PsySocFear-F.
+
     </p>
 
 
@@ -242,6 +441,7 @@
 
     </p>
 
+
 </article>
 
 
@@ -250,9 +450,12 @@
 
 <article class="card news-card">
 
+
     <details>
 
+
         <summary>
+
 
             <span class="news-title">
                 Održana fokus grupa u sklopu PsySocFear-F projekta
@@ -263,45 +466,56 @@
                 SAZNAJTE VIŠE ↓
             </span>
 
+
         </summary>
 
 
         <div class="news-text">
 
+
             <p>
+
                 Ovaj tjedan, 21.07.2026., doc. dr. sc. Ana Petak i
                 Dora Korać, mag. psych. održale su prvo u nizu planiranih
                 kvalitativnih istraživanja u sklopu projekta
+
                 <em>
                     Psihosocijalni čimbenici kao prediktori straha od
                     recidiva raka kod žena oboljelih od raka dojke i
                     ginekoloških karcinoma (PsySocFear-F).
                 </em>
+
                 Radi se o interdisciplinarnom projektu Fakulteta
                 hrvatskih studija, financiranog od strane Europske unije
                 (<em>NextGenerationEU</em>), s istraživačkim timom koji
                 obuhvaća istraživače i stručnjake iz različitih područja.
+
             </p>
 
 
             <p>
+
                 Cilj projekta je istražiti psihološke i socijalne čimbenike
                 povezane sa strahom od povratka karcinoma te doprinijeti
                 razvoju kvalitetne psihološke podrške za žene i njihove
                 bližnje, edukativnih materijala, preporuka za praksu i
                 edukacija za stručnjake.
+
             </p>
 
 
             <p>
+
                 Istraživanje je provedeno u Osijeku gdje su sudionice
                 otvoreno podijelile svoja iskustva od trenutka postavljanja
                 dijagnoze, kroz razdoblje aktivnog liječenja, pa sve do
                 izazova svakodnevnog života nakon završetka terapije.
+
                 Prikupili smo vrijedne spoznaje o njihovim potrebama
                 tijekom i nakon liječenja, što će biti važna podloga za
                 oblikovanje nadolazećih projektnih aktivnosti koje će
                 odgovarati stvarnim potrebama korisnica.
+
             </p>
 
 
@@ -309,9 +523,12 @@
                 SAKRIJ TEKST ↑
             </div>
 
+
         </div>
 
+
     </details>
+
 
 </article>
 
@@ -326,6 +543,7 @@
 
 
 <div class="section-content">
+
 
     <h2 class="section-title">
         Pratite nas na Instagramu
@@ -353,6 +571,7 @@
 
     </p>
 
+
 </div>
 
 
@@ -367,47 +586,58 @@
 
 <div class="section-content">
 
+
     <h2>
         Financiranje projekta
     </h2>
 
 
     <p>
+
         Institucionalni istraživački projekt provodi se u sklopu
         Nacionalnog plana oporavka i otpornosti (NPOO) 2021. – 2026.,
         sufinanciran iz izvora 581 – Mehanizam za oporavak i otpornost.
+
     </p>
 
 
     <div class="funding-logos">
+
 
         <img
             src="HR Financira Europska unija_POS.jpg"
             alt="Financira Europska unija"
         >
 
+
     </div>
 
 
     <p style="margin-top: 30px;">
 
+
         Nositelj projekta:<br>
+
 
         <strong>
             Fakultet hrvatskih studija Sveučilišta u Zagrebu
         </strong>
+
 
     </p>
 
 
     <div class="institution-logo">
 
+
         <img
             src="logo fhs.jpg"
             alt="Fakultet hrvatskih studija Sveučilišta u Zagrebu"
         >
 
+
     </div>
+
 
 </div>
 
@@ -427,8 +657,10 @@
 
 
 <p>
+
     Psihosocijalni čimbenici kao prediktori straha od recidiva raka
     kod žena oboljelih od raka dojke i ginekoloških karcinoma
+
 </p>
 
 
@@ -448,4 +680,3 @@
 </body>
 
 </html>
-
