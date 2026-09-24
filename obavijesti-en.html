@@ -64,10 +64,21 @@
 
 
     .close-text {
+        display: block;
         margin-top: 25px;
+        padding: 0;
+        border: 0;
+        background: none;
         text-align: left;
         color: #6b3f5d;
         font-weight: 700;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+
+    .close-text:hover {
+        color: #4d2c43;
     }
 
 
@@ -155,27 +166,37 @@
     <ul>
 
         <li>
-            <a href="index-en.html">Home</a>
+            <a href="index-en.html">
+                Home
+            </a>
         </li>
 
 
         <li>
-            <a href="o-projektu-en.html">About the Project</a>
+            <a href="o-projektu-en.html">
+                About the Project
+            </a>
         </li>
 
 
         <li>
-            <a href="tim-en.html">Our Team</a>
+            <a href="tim-en.html">
+                Our Team
+            </a>
         </li>
 
 
         <li>
-            <a href="ciljevi-en.html">Objectives</a>
+            <a href="ciljevi-en.html">
+                Objectives
+            </a>
         </li>
 
 
         <li>
-            <a href="obavijesti-en.html">News</a>
+            <a href="obavijesti-en.html">
+                News
+            </a>
         </li>
 
     </ul>
@@ -360,9 +381,13 @@
             </p>
 
 
-            <div class="close-text">
+            <button
+                type="button"
+                class="close-text"
+                onclick="this.closest('details').open = false;"
+            >
                 HIDE TEXT ↑
-            </div>
+            </button>
 
         </div>
 
@@ -477,9 +502,13 @@
             </p>
 
 
-            <div class="close-text">
+            <button
+                type="button"
+                class="close-text"
+                onclick="this.closest('details').open = false;"
+            >
                 HIDE TEXT ↑
-            </div>
+            </button>
 
         </div>
 
@@ -616,6 +645,7 @@
 
 
 </footer>
+
 
 </body>
 
