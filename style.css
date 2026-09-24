@@ -438,11 +438,10 @@ align-items: center;
 }
 
 .institution-logo img {
-width: 310px;
-
-max-width: 80%;
-
-height: auto;
+    width: 120px;
+    max-width: 50%;
+    height: auto;
+}
 }
 
 /* =========================
@@ -543,9 +542,11 @@ h1 {
 /* LOGO FAKULTETA NA MOBITELU */
 
 .institution-logo img {
-    width: 160px;
-    max-width: 60%;
+    width: 110px;
+    max-width: 50%;
     height: auto;
+}
+    
 }
 
 }
