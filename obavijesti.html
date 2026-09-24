@@ -46,7 +46,9 @@ nav {
 }
 
 
-/* OBAVIJESTI */
+/* =========================
+OBAVIJESTI
+========================= */
 
 .news-card details summary {
     cursor: pointer;
@@ -98,19 +100,37 @@ nav {
 }
 
 
-/* SLIKA OBAVIJESTI */
+/* =========================
+SLIKA VUKOVAR - LIJEVO
+========================= */
 
-.news-image {
-    display: block;
-    width: 100%;
-    max-width: 720px;
+.vukovar-news-image {
+    width: 260px;
+    max-width: 40%;
     height: auto;
-    margin: 0 auto 30px auto;
+
+    float: left;
+
+    margin: 0 25px 15px 0;
+
     border-radius: 6px;
 }
 
 
-/* GUMB */
+/* OMOGUĆUJE DA SE TEKST OMATA OKO SLIKE */
+
+.vukovar-news {
+    overflow: hidden;
+}
+
+.vukovar-news .news-text {
+    overflow: visible;
+}
+
+
+/* =========================
+GUMB
+========================= */
 
 .article-button {
     display: inline-block;
@@ -127,7 +147,9 @@ nav {
 }
 
 
-/* MOBITEL */
+/* =========================
+MOBITEL
+========================= */
 
 @media (max-width: 800px) {
 
@@ -140,10 +162,15 @@ nav {
         margin-top: 5px;
     }
 
-    .news-image {
+    .vukovar-news-image {
         width: 100%;
         max-width: 100%;
-        margin-bottom: 25px;
+
+        float: none;
+
+        display: block;
+
+        margin: 0 0 25px 0;
     }
 
 }
@@ -228,13 +255,13 @@ nav {
 
 <!-- NOVA OBAVIJEST – VUKOVAR -->
 
-<article class="card news-card">
+<article class="card news-card vukovar-news">
 
 
     <img
         src="terensko-istrazivanje-vukovar-psysocfear-f.jpg"
         alt="Terensko istraživanje u Vukovaru u sklopu projekta PsySocFear-F"
-        class="news-image"
+        class="vukovar-news-image"
     >
 
 
@@ -615,14 +642,11 @@ nav {
 
     <p style="margin-top: 30px;">
 
-
         Nositelj projekta:<br>
-
 
         <strong>
             Fakultet hrvatskih studija Sveučilišta u Zagrebu
         </strong>
-
 
     </p>
 
