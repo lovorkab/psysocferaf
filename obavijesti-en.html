@@ -4,7 +4,6 @@
 
 <head>
 
-
 <meta charset="UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -87,6 +86,55 @@
         background: #4d2c43;
     }
 
+
+    /* =========================
+       VUKOVAR NEWS IMAGE - LEFT
+       ========================= */
+
+    .vukovar-news-image {
+        width: 260px;
+        max-width: 40%;
+        height: auto;
+
+        float: left;
+
+        margin: 0 25px 15px 0;
+
+        border-radius: 6px;
+    }
+
+
+    /* TEXT WRAPS AROUND IMAGE */
+
+    .vukovar-news {
+        overflow: hidden;
+    }
+
+
+    .vukovar-news .news-text {
+        overflow: visible;
+    }
+
+
+    /* =========================
+       MOBILE
+       ========================= */
+
+    @media (max-width: 800px) {
+
+        .vukovar-news-image {
+            width: 100%;
+            max-width: 100%;
+
+            float: none;
+
+            display: block;
+
+            margin: 0 0 25px 0;
+        }
+
+    }
+
 </style>
 
 
@@ -94,8 +142,8 @@
 
 <body>
 
-<header>
 
+<header>
 
 <nav>
 
@@ -133,7 +181,7 @@
     </ul>
 
 
-    <!-- JEZIK -->
+    <!-- LANGUAGE -->
 
     <div class="language-switch">
 
@@ -153,8 +201,8 @@
 
 </nav>
 
-
 </header>
+
 
 <main>
 
@@ -168,6 +216,159 @@
     Here you can follow news, activities and events related to
     the PsySocFear-F project.
 </p>
+
+
+
+<!-- VUKOVAR NEWS ITEM -->
+
+<article class="card news-card vukovar-news">
+
+    <img
+        src="terensko-istrazivanje-vukovar-psysocfear-f.jpg"
+        alt="Field research in Vukovar as part of the PsySocFear-F project"
+        class="vukovar-news-image"
+    >
+
+
+    <details>
+
+        <summary>
+
+            <span class="news-title">
+                Field research in Vukovar as part of the PsySocFear-F project
+            </span>
+
+
+            <span class="more-button">
+                LEARN MORE ↓
+            </span>
+
+        </summary>
+
+
+        <div class="news-text">
+
+            <p>
+                <strong>24 September 2026</strong>
+            </p>
+
+
+            <p>
+                With the beginning of autumn, we are continuing our field
+                activities as part of the project
+                <em>
+                    Psychosocial factors as predictors of fear of cancer
+                    recurrence in women diagnosed with breast and
+                    gynecological cancers (PsySocFear-F)
+                </em>,
+                led by Associate Professor Lovorka Brajković, PhD.
+            </p>
+
+
+            <p>
+                The project focuses on gaining a better understanding of
+                the factors that contribute to fear of cancer recurrence,
+                with the aim, among other things, of contributing to the
+                development of higher-quality psychological support and
+                the preparation of educational materials and
+                recommendations for professional practice.
+            </p>
+
+
+            <p>
+                The research is conducted using both qualitative and
+                quantitative approaches, and this time our field research
+                took us to Vukovar.
+            </p>
+
+
+            <p>
+                Our visit to Vukovar was organised by our valued external
+                collaborator, Professor Marijana Braš, PhD, who has been
+                working with oncology patients from this area for many
+                years.
+            </p>
+
+
+            <p>
+                Associate Professor Ana Petak, PhD and Dora Korać, PhD,
+                spent several productive days in the field, receiving an
+                exceptionally warm welcome and valuable support from
+                Dr Jadranka Ban and Ms Svjetlana Dželalija Kovačić,
+                President of the Association of Croatian Homeland War
+                Veterans.
+            </p>
+
+
+            <p>
+                With their help in organising the space and bringing
+                participants together, two focus groups were conducted.
+                The meetings took place in an open and stimulating
+                atmosphere, and the participants showed great willingness
+                to talk and share their own experiences.
+            </p>
+
+
+            <p>
+                It was particularly meaningful for us to hear that the
+                meetings themselves provided participants with an
+                opportunity to exchange advice and a sense that their
+                opinions and perspectives were recognised and valued.
+            </p>
+
+
+            <p>
+                We believe that the collected data will make a valuable
+                contribution to further research, as well as provide a
+                basis for developing possible interventions and activities
+                that could be implemented in practice in the future.
+            </p>
+
+
+            <p>
+                During our stay in Vukovar, we also presented the project,
+                distributed promotional materials and further expanded
+                the invitation to participate in the research.
+            </p>
+
+
+            <p>
+                We are particularly pleased that the Association has
+                expressed its willingness to host us during the workshops
+                that we plan to conduct in the new project year.
+            </p>
+
+
+            <p>
+                Dr Jadranka Ban and Ms Svjetlana Dželalija Kovačić also
+                connected us with numerous new contacts, opening up
+                opportunities for further cooperation and the
+                implementation of project activities in the field.
+            </p>
+
+
+            <p>
+                We would like to thank them for their hospitality, support
+                and trust, as well as all the participants who contributed
+                to the research through their participation and openness.
+            </p>
+
+
+            <p>
+                We look forward to new meetings and hope to share new
+                field reports with you soon!
+            </p>
+
+
+            <div class="close-text">
+                HIDE TEXT ↑
+            </div>
+
+        </div>
+
+    </details>
+
+</article>
 
 
 
