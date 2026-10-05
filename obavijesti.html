@@ -99,10 +99,11 @@
 
 
     /* =========================
-       SLIKA VUKOVAR - LIJEVO
+       SLIKE LIJEVO
        ========================= */
 
-    .vukovar-news-image {
+    .vukovar-news-image,
+    .hrv-news-image {
         width: 260px;
         max-width: 40%;
         height: auto;
@@ -117,12 +118,14 @@
 
     /* OMOGUĆUJE DA SE TEKST OMATA OKO SLIKE */
 
-    .vukovar-news {
+    .vukovar-news,
+    .hrv-news {
         overflow: hidden;
     }
 
 
-    .vukovar-news .news-text {
+    .vukovar-news .news-text,
+    .hrv-news .news-text {
         overflow: visible;
     }
 
@@ -133,7 +136,8 @@
 
     @media (max-width: 800px) {
 
-        .vukovar-news-image {
+        .vukovar-news-image,
+        .hrv-news-image {
             width: 100%;
             max-width: 100%;
 
@@ -150,6 +154,7 @@
 
 
 </head>
+
 
 <body>
 
@@ -236,6 +241,102 @@
 <p>
     Ovdje možete pratiti novosti, aktivnosti i događanja povezana s projektom PsySocFear-F.
 </p>
+
+
+
+<!-- HRVATSKI RADIO VUKOVAR -->
+
+<article class="card news-card hrv-news">
+
+    <img
+        src="Fotografija - HRV.jpg"
+        alt="Predstavljanje projekta PsySocFear-F na Hrvatskom radiju Vukovar"
+        class="hrv-news-image"
+    >
+
+
+    <details>
+
+        <summary>
+
+            <span class="news-title">
+                O strahu od povratka raka: projekt PsySocFear-F predstavljen na Hrvatskom radiju Vukovar
+            </span>
+
+
+            <span class="more-button">
+                SAZNAJTE VIŠE ↓
+            </span>
+
+        </summary>
+
+
+        <div class="news-text">
+
+            <p>
+                Nakon provedenih terenskih aktivnosti u Vukovaru, o temi kojom se bavimo u sklopu projekta
+                „Psihosocijalni čimbenici kao prediktori straha od recidiva raka kod žena oboljelih od raka dojke
+                i ginekoloških karcinoma“ (PsySocFear-F) govorili smo i za Hrvatski radio Vukovar (HRV).
+            </p>
+
+
+            <p>
+                Doc. dr. sc. Ana Petak i dr. sc. Dora Korać dale su izjavu za Hrvatski radio Vukovar,
+                koja je potom pretočena u članak „Izvukla si živu glavu, budi sretna“.
+                Tema je, zahvaljujući interesu radija, predstavljena i u nekoliko različitih emisija HRV-a,
+                čime je problem straha od recidiva raka dodatno približen široj javnosti.
+            </p>
+
+
+            <p>
+                U razgovoru se posebno govorilo o iskustvima žena nakon završenog onkološkog liječenja,
+                osjećaju nesigurnosti koji može pratiti razdoblje nakon terapije te činjenici da završetak
+                liječenja ne znači nužno i kraj strahova i briga povezanih s bolešću.
+                Upravo je razumijevanje tih iskustava jedan od važnih aspekata našeg projekta.
+                Medijska vidljivost projekta važna nam je jer omogućuje da se o ovoj temi govori otvorenije
+                i izvan akademskog i zdravstvenog konteksta te da informacije o istraživanju i mogućnostima
+                sudjelovanja dođu do što većeg broja zainteresiranih žena i šire javnosti.
+            </p>
+
+
+            <p>
+                Zahvaljujemo Hrvatskom radiju Vukovar na interesu za temu i na prilici da zajedno otvorimo
+                prostor za razgovor o iskustvima žena nakon liječenja raka.
+            </p>
+
+
+            <p>
+                Cijeli članak dostupan je na mrežnim stranicama Hrvatskog radija Vukovar:
+            </p>
+
+
+            <p>
+
+                <a
+                    href="https://www.hrv.hr/mix-zona/izvukla-si-zivu-glavu-budi-sretna-i-zasto-strah-od-povratka-raka-ne-prestaje-s-posljednjom-kemoterapijom"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="article-button"
+                >
+                    Pročitajte cijeli članak
+                </a>
+
+            </p>
+
+
+            <button
+                type="button"
+                class="close-text"
+                onclick="this.closest('details').open = false;"
+            >
+                SAKRIJ TEKST ↑
+            </button>
+
+        </div>
+
+    </details>
+
+</article>
 
 
 
@@ -505,6 +606,8 @@
 
 <section class="intro">
 
+
+<section class="intro">
 
 <div class="section-content">
 
