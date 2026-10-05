@@ -99,10 +99,11 @@
 
 
     /* =========================
-       VUKOVAR NEWS IMAGE - LEFT
+       NEWS IMAGES - LEFT
        ========================= */
 
-    .vukovar-news-image {
+    .vukovar-news-image,
+    .hrv-news-image {
         width: 260px;
         max-width: 40%;
         height: auto;
@@ -117,12 +118,14 @@
 
     /* TEXT WRAPS AROUND IMAGE */
 
-    .vukovar-news {
+    .vukovar-news,
+    .hrv-news {
         overflow: hidden;
     }
 
 
-    .vukovar-news .news-text {
+    .vukovar-news .news-text,
+    .hrv-news .news-text {
         overflow: visible;
     }
 
@@ -133,7 +136,8 @@
 
     @media (max-width: 800px) {
 
-        .vukovar-news-image {
+        .vukovar-news-image,
+        .hrv-news-image {
             width: 100%;
             max-width: 100%;
 
@@ -150,6 +154,7 @@
 
 
 </head>
+
 
 <body>
 
@@ -240,6 +245,114 @@
 
 
 
+<!-- CROATIAN RADIO VUKOVAR -->
+
+<article class="card news-card hrv-news">
+
+    <img
+        src="Fotografija - HRV.jpg"
+        alt="PsySocFear-F project presented on Croatian Radio Vukovar"
+        class="hrv-news-image"
+    >
+
+
+    <details>
+
+        <summary>
+
+            <span class="news-title">
+                On Fear of Cancer Recurrence: PsySocFear-F Project Presented on Croatian Radio Vukovar
+            </span>
+
+
+            <span class="more-button">
+                LEARN MORE ↓
+            </span>
+
+        </summary>
+
+
+        <div class="news-text">
+
+            <p>
+                Following the field activities conducted in Vukovar, we also spoke to
+                Croatian Radio Vukovar (HRV) about the topic addressed within the project
+                <em>
+                    Psychosocial factors as predictors of fear of cancer recurrence in women
+                    diagnosed with breast and gynecological cancers (PsySocFear-F)
+                </em>.
+            </p>
+
+
+            <p>
+                Associate Professor Ana Petak, PhD, and Dora Korać, PhD, gave a statement
+                to Croatian Radio Vukovar, which was subsequently published as an article
+                entitled
+                <em>
+                    “Izvukla si živu glavu, budi sretna”
+                </em>
+                (“You survived, be grateful”) .
+                Thanks to the radio station's interest in the topic, it was also presented
+                in several different HRV programmes, bringing the issue of fear of cancer
+                recurrence closer to the wider public.
+            </p>
+
+
+            <p>
+                The conversation focused particularly on women's experiences after completing
+                cancer treatment, the sense of uncertainty that may accompany the period
+                following therapy, and the fact that completing treatment does not necessarily
+                mean the end of fears and concerns related to the illness.
+                Understanding these experiences is one of the important aspects of our project.
+                Media visibility is important to us because it enables this topic to be discussed
+                more openly beyond academic and healthcare settings, and allows information about
+                the research and opportunities to participate to reach as many interested women
+                and members of the wider public as possible.
+            </p>
+
+
+            <p>
+                We would like to thank Croatian Radio Vukovar for its interest in this topic
+                and for the opportunity to open up a space for conversation about women's
+                experiences after cancer treatment.
+            </p>
+
+
+            <p>
+                The full article is available on the Croatian Radio Vukovar website:
+            </p>
+
+
+            <p>
+
+                <a
+                    href="https://www.hrv.hr/mix-zona/izvukla-si-zivu-glavu-budi-sretna-i-zasto-strah-od-povratka-raka-ne-prestaje-s-posljednjom-kemoterapijom"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="article-button"
+                >
+                    Read the full article
+                </a>
+
+            </p>
+
+
+            <button
+                type="button"
+                class="close-text"
+                onclick="this.closest('details').open = false;"
+            >
+                HIDE TEXT ↑
+            </button>
+
+        </div>
+
+    </details>
+
+</article>
+
+
+
 <!-- VUKOVAR NEWS ITEM -->
 
 <article class="card news-card vukovar-news">
@@ -313,8 +426,8 @@
 
             <p>
                 Associate Professor Ana Petak, PhD and Dora Korać, PhD,
-                spent several productive days in the field, receiving an
-                exceptionally warm welcome and valuable support from
+                spent several productive days in the field, receiving
+                an exceptionally warm welcome and valuable support from
                 Dr Jadranka Ban and Ms Svjetlana Dželalija Kovačić,
                 President of the Association of Croatian Homeland War
                 Veterans.
